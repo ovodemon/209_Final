@@ -8,8 +8,6 @@ public class CreateButton : MonoBehaviour
     // Start is called before the first frame update
     public GameObject CreateObjectCanvas;
     public GameObject ObjectsCanvas;
-
-
     public void transfromCanvas()
     {   
         float x =  CreateObjectCanvas.transform.position.x;
