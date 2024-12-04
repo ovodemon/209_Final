@@ -17,9 +17,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Fenced Room.unity
     guid: 7f0da38815998f146920e19a0710880b
-  - enabled: 1
-    path: Assets/Assignment4 1.unity
-    guid: 5aab6588debcec94690d21fa8ca21d27
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: cb384f081e5d8ee46bb55f152be84068, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 74e94ecbf9250e0428f65d11859ff62a, type: 2}

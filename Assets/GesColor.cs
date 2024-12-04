@@ -10,21 +10,25 @@ namespace Oculus.Interaction.Samples
     {
         private bool isChange = false;
         private bool isDelete = false;
+        private bool isSize = false;
         public ActiveStateSelector ChangeGesture;
         public ActiveStateSelector DeleteGesture;
+        public ActiveStateSelector SizeGesture;
         public GameObject objectToChangeColor;
         public GameObject objectToChangeLocation;
         public GameObject cursorVisual;
-
+        public GameObject LeftHand;
+        public GameObject RightHand;
         private Renderer objectRenderer;
         //public string hexColorCodeCustom = "#FFFFFF"; // Default color is white
         private int Hue = 1;
         public static bool isSelected = false;
-
+        private float lastDistance;
         // Start is called before the first frame update
         public void Selected()
         {
             objectRenderer = objectToChangeColor.GetComponent<Renderer>();
+            lastDistance = (LeftHand.transform.position - RightHand.transform.position).magnitude;
             isSelected = true;
         }
         public void unSelected()
@@ -65,6 +69,8 @@ namespace Oculus.Interaction.Samples
             ChangeGesture.WhenUnselected += () => {isChange = false;}; 
             DeleteGesture.WhenSelected += () => {isDelete = true;};
             DeleteGesture.WhenUnselected += () => {isDelete = false;}; 
+            SizeGesture.WhenSelected += () => {isSize = true;};
+            SizeGesture.WhenUnselected += () => {isSize = false;};
             float Sat = 0.7f;
             float Value = 0.7f;
             if (isChange && isSelected){
@@ -74,6 +80,11 @@ namespace Oculus.Interaction.Samples
                 if (Hue >= 360){
                     Hue = 1;
                 }
+            }
+
+            if (isSize && isSelected){
+                float currentDistance = (LeftHand.transform.position - RightHand.transform.position).magnitude;
+                objectToChangeLocation.transform.localScale = objectToChangeLocation.transform.localScale * (currentDistance/lastDistance);
             }
 
         }
