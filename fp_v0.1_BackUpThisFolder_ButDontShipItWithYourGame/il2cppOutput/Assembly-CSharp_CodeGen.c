@@ -3972,47 +3972,65 @@ extern void GesColor_U3CUpdateU3Eb__13_1_m3AAFCE3A7D62832420D02219753AE52F5A8A2C
 extern void GesColor_U3CUpdateU3Eb__13_2_mC56F0D55607B2333E85B023AF33555946EC840A6 (void);
 // 0x000007D1 System.Void Oculus.Interaction.Samples.GesColor::<Update>b__13_3()
 extern void GesColor_U3CUpdateU3Eb__13_3_mEDFC2AD8EF0AA27893492B680774878F058AD02E (void);
-// 0x000007D2 System.Void Oculus.Interaction.Samples.GestureDetection::Start()
+// 0x000007D2 System.Void Oculus.Interaction.Samples.GesColorforRock::Selected()
+extern void GesColorforRock_Selected_mA326846B3E4E6DAC816A41A86BB2BC85A311C2FA (void);
+// 0x000007D3 System.Void Oculus.Interaction.Samples.GesColorforRock::unSelected()
+extern void GesColorforRock_unSelected_mA791889DC050913F7788BA0A45FB621FD1084CC9 (void);
+// 0x000007D4 System.Void Oculus.Interaction.Samples.GesColorforRock::ChangeColor()
+extern void GesColorforRock_ChangeColor_m5F60EF92582661FB662BE8402F711C1001F86533 (void);
+// 0x000007D5 System.Void Oculus.Interaction.Samples.GesColorforRock::Update()
+extern void GesColorforRock_Update_m4C3B143AD5CBB91D605A0076078FDDF7E44ABA4F (void);
+// 0x000007D6 System.Void Oculus.Interaction.Samples.GesColorforRock::.ctor()
+extern void GesColorforRock__ctor_mE9D2C1054E19181FFC79F8DF2E39717BEE7A3593 (void);
+// 0x000007D7 System.Void Oculus.Interaction.Samples.GesColorforRock::<Update>b__17_0()
+extern void GesColorforRock_U3CUpdateU3Eb__17_0_m94F7BECDDD27812725820F85F1AB28B08AB76B91 (void);
+// 0x000007D8 System.Void Oculus.Interaction.Samples.GesColorforRock::<Update>b__17_1()
+extern void GesColorforRock_U3CUpdateU3Eb__17_1_m42946814DC145E21684C27CF075397612C7378B6 (void);
+// 0x000007D9 System.Void Oculus.Interaction.Samples.GesColorforRock::<Update>b__17_2()
+extern void GesColorforRock_U3CUpdateU3Eb__17_2_mF22BD22FD99B3BAFB5CA6B476947E2EBA4AB9389 (void);
+// 0x000007DA System.Void Oculus.Interaction.Samples.GesColorforRock::<Update>b__17_3()
+extern void GesColorforRock_U3CUpdateU3Eb__17_3_m8DF9A2014DCF7BBF4D3F0DC5C3E263AF44DA8677 (void);
+// 0x000007DB System.Void Oculus.Interaction.Samples.GestureDetection::Start()
 extern void GestureDetection_Start_mB545EA4D22CF581263AE20B548FD057D63700761 (void);
-// 0x000007D3 System.Void Oculus.Interaction.Samples.GestureDetection::Update()
+// 0x000007DC System.Void Oculus.Interaction.Samples.GestureDetection::Update()
 extern void GestureDetection_Update_m00923637CFA2B2045080CA1AB70AF7952EFE5443 (void);
-// 0x000007D4 System.Void Oculus.Interaction.Samples.GestureDetection::.ctor()
+// 0x000007DD System.Void Oculus.Interaction.Samples.GestureDetection::.ctor()
 extern void GestureDetection__ctor_m6BEA88F72C5ACBD5C32213898171B8E8BE4E60DF (void);
-// 0x000007D5 System.Void Oculus.Interaction.Samples.GestureDetection::<Start>b__6_0()
+// 0x000007DE System.Void Oculus.Interaction.Samples.GestureDetection::<Start>b__6_0()
 extern void GestureDetection_U3CStartU3Eb__6_0_m4DC340F87578F6DE34098C6567E6D51A01BC0C2C (void);
-// 0x000007D6 System.Void Oculus.Interaction.Samples.GestureDetection::<Start>b__6_1()
+// 0x000007DF System.Void Oculus.Interaction.Samples.GestureDetection::<Start>b__6_1()
 extern void GestureDetection_U3CStartU3Eb__6_1_m05FE72693FCF17941A7DD8D18210347018CAD1ED (void);
-// 0x000007D7 System.Void Oculus.Interaction.Samples.ThrowingTutorial::Start()
+// 0x000007E0 System.Void Oculus.Interaction.Samples.ThrowingTutorial::Start()
 extern void ThrowingTutorial_Start_m7EEB87BC53FE7CFD8F6910DDC41BEE7AD9186A6D (void);
-// 0x000007D8 System.Void Oculus.Interaction.Samples.ThrowingTutorial::Update()
+// 0x000007E1 System.Void Oculus.Interaction.Samples.ThrowingTutorial::Update()
 extern void ThrowingTutorial_Update_mB76616D40249D29B99B45FDCE901EB1DEC87CBB5 (void);
-// 0x000007D9 System.Void Oculus.Interaction.Samples.ThrowingTutorial::Throw()
+// 0x000007E2 System.Void Oculus.Interaction.Samples.ThrowingTutorial::Throw()
 extern void ThrowingTutorial_Throw_mCF91428CCBA8833AC690537DD2273A8A762B3D9B (void);
-// 0x000007DA System.Void Oculus.Interaction.Samples.ThrowingTutorial::ResetThrow()
+// 0x000007E3 System.Void Oculus.Interaction.Samples.ThrowingTutorial::ResetThrow()
 extern void ThrowingTutorial_ResetThrow_m7512D024424650916F02026F9A850C188AE5460B (void);
-// 0x000007DB System.Void Oculus.Interaction.Samples.ThrowingTutorial::.ctor()
+// 0x000007E4 System.Void Oculus.Interaction.Samples.ThrowingTutorial::.ctor()
 extern void ThrowingTutorial__ctor_m391119407658C22095CD4E5C25B0B5107897B12B (void);
-// 0x000007DC System.Void Oculus.Interaction.Samples.ThrowingTutorial::<Update>b__11_0()
+// 0x000007E5 System.Void Oculus.Interaction.Samples.ThrowingTutorial::<Update>b__11_0()
 extern void ThrowingTutorial_U3CUpdateU3Eb__11_0_mFE2969CC1832FF579B0C9BD7E2C8C9466A0CB058 (void);
-// 0x000007DD System.Void Oculus.Interaction.Samples.ThrowingTutorial::<Update>b__11_1()
+// 0x000007E6 System.Void Oculus.Interaction.Samples.ThrowingTutorial::<Update>b__11_1()
 extern void ThrowingTutorial_U3CUpdateU3Eb__11_1_m42A5EC0B1B7BC7DA4A85113ECC37A41C6D2DA4CC (void);
-// 0x000007DE System.Void Oculus.Interaction.HandPosing.DataCollection::Awake()
+// 0x000007E7 System.Void Oculus.Interaction.HandPosing.DataCollection::Awake()
 extern void DataCollection_Awake_m5787F0FC22058A289AA4E2C73A3686733140879F (void);
-// 0x000007DF System.Void Oculus.Interaction.HandPosing.DataCollection::OnApplicationQuit()
+// 0x000007E8 System.Void Oculus.Interaction.HandPosing.DataCollection::OnApplicationQuit()
 extern void DataCollection_OnApplicationQuit_m4061417AD2AB43C92C7341800897244435BD6244 (void);
-// 0x000007E0 System.Void Oculus.Interaction.HandPosing.DataCollection::OnApplicationPause(System.Boolean)
+// 0x000007E9 System.Void Oculus.Interaction.HandPosing.DataCollection::OnApplicationPause(System.Boolean)
 extern void DataCollection_OnApplicationPause_mBF75824F2BEB3E0F33187BA10C926201082A9F00 (void);
-// 0x000007E1 System.Void Oculus.Interaction.HandPosing.DataCollection::Start()
+// 0x000007EA System.Void Oculus.Interaction.HandPosing.DataCollection::Start()
 extern void DataCollection_Start_mF33AC275E04A32B17208B4177262909285F38939 (void);
-// 0x000007E2 System.Void Oculus.Interaction.HandPosing.DataCollection::Update()
+// 0x000007EB System.Void Oculus.Interaction.HandPosing.DataCollection::Update()
 extern void DataCollection_Update_mACD2A075EB6869FA23CBE5CC34A630262C08365D (void);
-// 0x000007E3 System.Void Oculus.Interaction.HandPosing.DataCollection::WriteToFile(System.Single,System.Single,System.Single,System.Boolean,System.Boolean,System.Boolean)
+// 0x000007EC System.Void Oculus.Interaction.HandPosing.DataCollection::WriteToFile(System.Single,System.Single,System.Single,System.Boolean,System.Boolean,System.Boolean)
 extern void DataCollection_WriteToFile_m2D98D3F5DDE2B1B0464D0AFEBA0D04800DCAD1A8 (void);
-// 0x000007E4 System.Double Oculus.Interaction.HandPosing.DataCollection::get_Now()
+// 0x000007ED System.Double Oculus.Interaction.HandPosing.DataCollection::get_Now()
 extern void DataCollection_get_Now_mC2C00D83BA3DFF4A273AA910C825443D06BEA7B9 (void);
-// 0x000007E5 System.Void Oculus.Interaction.HandPosing.DataCollection::.ctor()
+// 0x000007EE System.Void Oculus.Interaction.HandPosing.DataCollection::.ctor()
 extern void DataCollection__ctor_m84793EB1779A764EE2071F39384C92E63FB8F56C (void);
-static Il2CppMethodPointer s_methodPointers[2021] = 
+static Il2CppMethodPointer s_methodPointers[2030] = 
 {
 	ColorChanger_Start_m0175A8BBCAE789CDCA7D4F694323F2611B6551C5,
 	ColorChanger_ChangeColorRed_mE571C0F5BEEC734378841A6D1CA579EEAA77081D,
@@ -6015,6 +6033,15 @@ static Il2CppMethodPointer s_methodPointers[2021] =
 	GesColor_U3CUpdateU3Eb__13_1_m3AAFCE3A7D62832420D02219753AE52F5A8A2C34,
 	GesColor_U3CUpdateU3Eb__13_2_mC56F0D55607B2333E85B023AF33555946EC840A6,
 	GesColor_U3CUpdateU3Eb__13_3_mEDFC2AD8EF0AA27893492B680774878F058AD02E,
+	GesColorforRock_Selected_mA326846B3E4E6DAC816A41A86BB2BC85A311C2FA,
+	GesColorforRock_unSelected_mA791889DC050913F7788BA0A45FB621FD1084CC9,
+	GesColorforRock_ChangeColor_m5F60EF92582661FB662BE8402F711C1001F86533,
+	GesColorforRock_Update_m4C3B143AD5CBB91D605A0076078FDDF7E44ABA4F,
+	GesColorforRock__ctor_mE9D2C1054E19181FFC79F8DF2E39717BEE7A3593,
+	GesColorforRock_U3CUpdateU3Eb__17_0_m94F7BECDDD27812725820F85F1AB28B08AB76B91,
+	GesColorforRock_U3CUpdateU3Eb__17_1_m42946814DC145E21684C27CF075397612C7378B6,
+	GesColorforRock_U3CUpdateU3Eb__17_2_mF22BD22FD99B3BAFB5CA6B476947E2EBA4AB9389,
+	GesColorforRock_U3CUpdateU3Eb__17_3_m8DF9A2014DCF7BBF4D3F0DC5C3E263AF44DA8677,
 	GestureDetection_Start_mB545EA4D22CF581263AE20B548FD057D63700761,
 	GestureDetection_Update_m00923637CFA2B2045080CA1AB70AF7952EFE5443,
 	GestureDetection__ctor_m6BEA88F72C5ACBD5C32213898171B8E8BE4E60DF,
@@ -6061,7 +6088,7 @@ static Il2CppTokenAdjustorThunkPair s_adjustorThunks[11] =
 	{ 0x0600015E, CopyTextureParams__ctor_mFDBBFAC0A6A4516DDDA2D278BC7C7FF5082FEAC5_AdjustorThunk },
 	{ 0x0600015F, TextureSet__ctor_mF0DA877361092E5093C04F4280B93985CDF70423_AdjustorThunk },
 };
-static const int32_t s_InvokerIndices[2021] = 
+static const int32_t s_InvokerIndices[2030] = 
 {
 	5362,
 	5362,
@@ -8078,6 +8105,15 @@ static const int32_t s_InvokerIndices[2021] =
 	5362,
 	5362,
 	5362,
+	5362,
+	5362,
+	5362,
+	5362,
+	5362,
+	5362,
+	5362,
+	5362,
+	5362,
 	4264,
 	5362,
 	5362,
@@ -8155,7 +8191,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	2021,
+	2030,
 	s_methodPointers,
 	11,
 	s_adjustorThunks,

@@ -18,7 +18,9 @@ namespace Oculus.Interaction.Samples
         public GameObject objectToChangeLocation;
         public GameObject cursorVisual;
 
-        private Renderer objectRenderer;
+        private Renderer objectRenderer1;
+        private Renderer objectRenderer2;
+        private Renderer objectRenderer3;
         //public string hexColorCodeCustom = "#FFFFFF"; // Default color is white
         private int Hue = 1;
         public static bool isSelected = false;
@@ -26,14 +28,16 @@ namespace Oculus.Interaction.Samples
         // Start is called before the first frame update
         public void Selected()
         {
-            objectRenderer = objectToChangeColor1.GetComponent<Renderer>();
-            objectRenderer = objectToChangeColor2.GetComponent<Renderer>();
-            objectRenderer = objectToChangeColor3.GetComponent<Renderer>();
+            objectRenderer1 = objectToChangeColor1.GetComponent<Renderer>();
+            objectRenderer2 = objectToChangeColor2.GetComponent<Renderer>();
+            objectRenderer3 = objectToChangeColor3.GetComponent<Renderer>();
             isSelected = true;
         }
         public void unSelected()
         {
-            objectRenderer = null;
+            objectRenderer1 = null;
+            objectRenderer2 = null;
+            objectRenderer3 = null;
             isSelected = false;
             objectToChangeLocation.transform.position = cursorVisual.transform.position;
             if (isDelete){
@@ -70,7 +74,9 @@ namespace Oculus.Interaction.Samples
             float Sat = 0.7f;
             float Value = 0.7f;
             if (isChange && isSelected){
-                objectRenderer.material.SetColor("_TopColor",Color.HSVToRGB(Hue/360f, Sat, Value)) ;
+                objectRenderer1.material.SetColor("_TopColor",Color.HSVToRGB(Hue/360f, Sat, Value)) ;
+                objectRenderer2.material.SetColor("_TopColor",Color.HSVToRGB(Hue/360f, Sat, Value)) ;
+                objectRenderer3.material.SetColor("_TopColor",Color.HSVToRGB(Hue/360f, Sat, Value)) ;
                 Hue = Hue + 5;
                 if (Hue >= 360){
                     Hue = 1;

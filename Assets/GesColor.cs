@@ -67,6 +67,7 @@ namespace Oculus.Interaction.Samples
             float Value = 0.7f;
             if (isChange && isSelected){
                 objectRenderer.material.SetColor("_TopColor",Color.HSVToRGB(Hue/360f, Sat, Value)) ;
+                objectRenderer.material.SetColor("_GroundColor",Color.HSVToRGB(Hue/360f, Sat, Value)) ;
                 Hue = Hue + 5;
                 if (Hue >= 360){
                     Hue = 1;

@@ -333,6 +333,8 @@ struct FontData_tB8E562846C6CB59C43260F69AE346B9BF3157224;
 struct GameObject_t76FEDD663AB33C991A9C9A23129337651094216F;
 // Oculus.Interaction.Samples.GesColor
 struct GesColor_t69D0962D4017ACBAD7855C58E33495A1C13F5D9D;
+// Oculus.Interaction.Samples.GesColorforRock
+struct GesColorforRock_t204FC104575841CB105DAC87222AAB766CB98D7D;
 // Oculus.Interaction.Samples.GestureDetection
 struct GestureDetection_tAABD51014A644CFDB7B6F386C3B3EF39BDF6DE70;
 // UnityEngine.UI.Graphic
@@ -625,6 +627,7 @@ IL2CPP_EXTERN_C RuntimeClass* Func_2_t6AD3CFC7C337E46C1DA946EEEA6278162FB59A04_i
 IL2CPP_EXTERN_C RuntimeClass* GC_t920F9CF6EBB7C787E5010A4352E1B587F356DC58_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* GameObject_t76FEDD663AB33C991A9C9A23129337651094216F_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* GesColor_t69D0962D4017ACBAD7855C58E33495A1C13F5D9D_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* GesColorforRock_t204FC104575841CB105DAC87222AAB766CB98D7D_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Instructions_t01FEB47EA914F8AA333388360984BCAE99E5DF42_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* IntPtr_t_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* List_1_tB951CE80B58D1BF9650862451D8DAD8C231F207B_il2cpp_TypeInfo_var;
@@ -750,6 +753,7 @@ IL2CPP_EXTERN_C String_t* _stringLiteral982EB241688495C1AF6152F618833411DB4F9B35
 IL2CPP_EXTERN_C String_t* _stringLiteral996E5360F80E16B2189CC1E536C91CE68083F694;
 IL2CPP_EXTERN_C String_t* _stringLiteral9D6B66BF93AFC12DE5805D06BA0ABBD6C3659968;
 IL2CPP_EXTERN_C String_t* _stringLiteralA83B8EF1A0DD0928ED5318216A030FC69A13643E;
+IL2CPP_EXTERN_C String_t* _stringLiteralAC0932BA6428825C433518C5A63A96E8C84DCDE3;
 IL2CPP_EXTERN_C String_t* _stringLiteralACA1EC1EB1D6AB82D8549B4EA5A5E83C1C605489;
 IL2CPP_EXTERN_C String_t* _stringLiteralAE35E7CDB50A871944FB3A88196A66D0F3973623;
 IL2CPP_EXTERN_C String_t* _stringLiteralB46971E487185F55C44F40E1807F8CFF6C46F543;
@@ -802,6 +806,10 @@ IL2CPP_EXTERN_C const RuntimeMethod* GesColor_U3CUpdateU3Eb__13_0_mB66648165161F
 IL2CPP_EXTERN_C const RuntimeMethod* GesColor_U3CUpdateU3Eb__13_1_m3AAFCE3A7D62832420D02219753AE52F5A8A2C34_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GesColor_U3CUpdateU3Eb__13_2_mC56F0D55607B2333E85B023AF33555946EC840A6_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GesColor_U3CUpdateU3Eb__13_3_mEDFC2AD8EF0AA27893492B680774878F058AD02E_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GesColorforRock_U3CUpdateU3Eb__17_0_m94F7BECDDD27812725820F85F1AB28B08AB76B91_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GesColorforRock_U3CUpdateU3Eb__17_1_m42946814DC145E21684C27CF075397612C7378B6_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GesColorforRock_U3CUpdateU3Eb__17_2_mF22BD22FD99B3BAFB5CA6B476947E2EBA4AB9389_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* GesColorforRock_U3CUpdateU3Eb__17_3_m8DF9A2014DCF7BBF4D3F0DC5C3E263AF44DA8677_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GestureDetection_U3CStartU3Eb__6_0_m4DC340F87578F6DE34098C6567E6D51A01BC0C2C_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* GestureDetection_U3CStartU3Eb__6_1_m05FE72693FCF17941A7DD8D18210347018CAD1ED_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* Hand_OnInputFocusAcquired_m0812ABDFE30CE9348919181D77BB8F5E4F5A3490_RuntimeMethod_var;
@@ -4479,6 +4487,43 @@ struct GesColor_t69D0962D4017ACBAD7855C58E33495A1C13F5D9D_StaticFields
 {
 	// System.Boolean Oculus.Interaction.Samples.GesColor::isSelected
 	bool ___isSelected_13;
+};
+
+// Oculus.Interaction.Samples.GesColorforRock
+struct GesColorforRock_t204FC104575841CB105DAC87222AAB766CB98D7D  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
+{
+	// System.Boolean Oculus.Interaction.Samples.GesColorforRock::isChange
+	bool ___isChange_4;
+	// System.Boolean Oculus.Interaction.Samples.GesColorforRock::isDelete
+	bool ___isDelete_5;
+	// Oculus.Interaction.ActiveStateSelector Oculus.Interaction.Samples.GesColorforRock::ChangeGesture
+	ActiveStateSelector_t4E5C386E75A1AEAB9729304B0BFC06441CD92A56* ___ChangeGesture_6;
+	// Oculus.Interaction.ActiveStateSelector Oculus.Interaction.Samples.GesColorforRock::DeleteGesture
+	ActiveStateSelector_t4E5C386E75A1AEAB9729304B0BFC06441CD92A56* ___DeleteGesture_7;
+	// UnityEngine.GameObject Oculus.Interaction.Samples.GesColorforRock::objectToChangeColor1
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___objectToChangeColor1_8;
+	// UnityEngine.GameObject Oculus.Interaction.Samples.GesColorforRock::objectToChangeColor2
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___objectToChangeColor2_9;
+	// UnityEngine.GameObject Oculus.Interaction.Samples.GesColorforRock::objectToChangeColor3
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___objectToChangeColor3_10;
+	// UnityEngine.GameObject Oculus.Interaction.Samples.GesColorforRock::objectToChangeLocation
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___objectToChangeLocation_11;
+	// UnityEngine.GameObject Oculus.Interaction.Samples.GesColorforRock::cursorVisual
+	GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* ___cursorVisual_12;
+	// UnityEngine.Renderer Oculus.Interaction.Samples.GesColorforRock::objectRenderer1
+	Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* ___objectRenderer1_13;
+	// UnityEngine.Renderer Oculus.Interaction.Samples.GesColorforRock::objectRenderer2
+	Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* ___objectRenderer2_14;
+	// UnityEngine.Renderer Oculus.Interaction.Samples.GesColorforRock::objectRenderer3
+	Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* ___objectRenderer3_15;
+	// System.Int32 Oculus.Interaction.Samples.GesColorforRock::Hue
+	int32_t ___Hue_16;
+};
+
+struct GesColorforRock_t204FC104575841CB105DAC87222AAB766CB98D7D_StaticFields
+{
+	// System.Boolean Oculus.Interaction.Samples.GesColorforRock::isSelected
+	bool ___isSelected_17;
 };
 
 // Oculus.Interaction.Samples.GestureDetection
@@ -23273,6 +23318,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GesColor_Update_m3FF7E188CFFB3975FC4425D
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GesColor_U3CUpdateU3Eb__13_3_mEDFC2AD8EF0AA27893492B680774878F058AD02E_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GesColor_t69D0962D4017ACBAD7855C58E33495A1C13F5D9D_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2F30AC8AFBFF25FE763FE60C0B1D93F1EB7BF8D9);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAC0932BA6428825C433518C5A63A96E8C84DCDE3);
 		s_Il2CppMethodInitialized = true;
 	}
 	float V_0 = 0.0f;
@@ -23314,14 +23360,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GesColor_Update_m3FF7E188CFFB3975FC4425D
 		bool L_8 = __this->___isChange_4;
 		if (!L_8)
 		{
-			goto IL_00c2;
+			goto IL_00eb;
 		}
 	}
 	{
 		bool L_9 = ((GesColor_t69D0962D4017ACBAD7855C58E33495A1C13F5D9D_StaticFields*)il2cpp_codegen_static_fields_for(GesColor_t69D0962D4017ACBAD7855C58E33495A1C13F5D9D_il2cpp_TypeInfo_var))->___isSelected_13;
 		if (!L_9)
 		{
-			goto IL_00c2;
+			goto IL_00eb;
 		}
 	}
 	{
@@ -23337,14 +23383,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GesColor_Update_m3FF7E188CFFB3975FC4425D
 		L_15 = Color_HSVToRGB_mD057CF0F1810C00D0F9E98A5CC5599213CF167DB_inline(((float)(((float)L_12)/(360.0f))), L_13, L_14, NULL);
 		NullCheck(L_11);
 		Material_SetColor_mFAB32FAA44461E46FD707B34184EC080CBB3539F(L_11, _stringLiteral2F30AC8AFBFF25FE763FE60C0B1D93F1EB7BF8D9, L_15, NULL);
+		// objectRenderer.material.SetColor("_GroundColor",Color.HSVToRGB(Hue/360f, Sat, Value)) ;
+		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_16 = __this->___objectRenderer_11;
+		NullCheck(L_16);
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_17;
+		L_17 = Renderer_get_material_m5BA2A00816C4CC66580D4B2E409CF10718C15656(L_16, NULL);
+		int32_t L_18 = __this->___Hue_12;
+		float L_19 = V_0;
+		float L_20 = V_1;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_21;
+		L_21 = Color_HSVToRGB_mD057CF0F1810C00D0F9E98A5CC5599213CF167DB_inline(((float)(((float)L_18)/(360.0f))), L_19, L_20, NULL);
+		NullCheck(L_17);
+		Material_SetColor_mFAB32FAA44461E46FD707B34184EC080CBB3539F(L_17, _stringLiteralAC0932BA6428825C433518C5A63A96E8C84DCDE3, L_21, NULL);
 		// Hue = Hue + 5;
-		int32_t L_16 = __this->___Hue_12;
-		__this->___Hue_12 = ((int32_t)il2cpp_codegen_add(L_16, 5));
+		int32_t L_22 = __this->___Hue_12;
+		__this->___Hue_12 = ((int32_t)il2cpp_codegen_add(L_22, 5));
 		// if (Hue >= 360){
-		int32_t L_17 = __this->___Hue_12;
-		if ((((int32_t)L_17) < ((int32_t)((int32_t)360))))
+		int32_t L_23 = __this->___Hue_12;
+		if ((((int32_t)L_23) < ((int32_t)((int32_t)360))))
 		{
-			goto IL_00c2;
+			goto IL_00eb;
 		}
 	}
 	{
@@ -23352,7 +23410,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GesColor_Update_m3FF7E188CFFB3975FC4425D
 		__this->___Hue_12 = 1;
 	}
 
-IL_00c2:
+IL_00eb:
 	{
 		// }
 		return;
@@ -23400,6 +23458,288 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GesColor_U3CUpdateU3Eb__13_2_mC56F0D5560
 }
 // System.Void Oculus.Interaction.Samples.GesColor::<Update>b__13_3()
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GesColor_U3CUpdateU3Eb__13_3_mEDFC2AD8EF0AA27893492B680774878F058AD02E (GesColor_t69D0962D4017ACBAD7855C58E33495A1C13F5D9D* __this, const RuntimeMethod* method) 
+{
+	{
+		// DeleteGesture.WhenUnselected += () => {isDelete = false;};
+		__this->___isDelete_5 = (bool)0;
+		// DeleteGesture.WhenUnselected += () => {isDelete = false;};
+		return;
+	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void Oculus.Interaction.Samples.GesColorforRock::Selected()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GesColorforRock_Selected_mA326846B3E4E6DAC816A41A86BB2BC85A311C2FA (GesColorforRock_t204FC104575841CB105DAC87222AAB766CB98D7D* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GameObject_GetComponent_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_m026EB44DB6238F13E2AFBECF1FBBE924CB1B040A_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GesColorforRock_t204FC104575841CB105DAC87222AAB766CB98D7D_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// objectRenderer1 = objectToChangeColor1.GetComponent<Renderer>();
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___objectToChangeColor1_8;
+		NullCheck(L_0);
+		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_1;
+		L_1 = GameObject_GetComponent_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_m026EB44DB6238F13E2AFBECF1FBBE924CB1B040A(L_0, GameObject_GetComponent_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_m026EB44DB6238F13E2AFBECF1FBBE924CB1B040A_RuntimeMethod_var);
+		__this->___objectRenderer1_13 = L_1;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___objectRenderer1_13), (void*)L_1);
+		// objectRenderer2 = objectToChangeColor2.GetComponent<Renderer>();
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___objectToChangeColor2_9;
+		NullCheck(L_2);
+		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_3;
+		L_3 = GameObject_GetComponent_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_m026EB44DB6238F13E2AFBECF1FBBE924CB1B040A(L_2, GameObject_GetComponent_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_m026EB44DB6238F13E2AFBECF1FBBE924CB1B040A_RuntimeMethod_var);
+		__this->___objectRenderer2_14 = L_3;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___objectRenderer2_14), (void*)L_3);
+		// objectRenderer3 = objectToChangeColor3.GetComponent<Renderer>();
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = __this->___objectToChangeColor3_10;
+		NullCheck(L_4);
+		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_5;
+		L_5 = GameObject_GetComponent_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_m026EB44DB6238F13E2AFBECF1FBBE924CB1B040A(L_4, GameObject_GetComponent_TisRenderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF_m026EB44DB6238F13E2AFBECF1FBBE924CB1B040A_RuntimeMethod_var);
+		__this->___objectRenderer3_15 = L_5;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___objectRenderer3_15), (void*)L_5);
+		// isSelected = true;
+		((GesColorforRock_t204FC104575841CB105DAC87222AAB766CB98D7D_StaticFields*)il2cpp_codegen_static_fields_for(GesColorforRock_t204FC104575841CB105DAC87222AAB766CB98D7D_il2cpp_TypeInfo_var))->___isSelected_17 = (bool)1;
+		// }
+		return;
+	}
+}
+// System.Void Oculus.Interaction.Samples.GesColorforRock::unSelected()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GesColorforRock_unSelected_mA791889DC050913F7788BA0A45FB621FD1084CC9 (GesColorforRock_t204FC104575841CB105DAC87222AAB766CB98D7D* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GesColorforRock_t204FC104575841CB105DAC87222AAB766CB98D7D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		s_Il2CppMethodInitialized = true;
+	}
+	{
+		// objectRenderer1 = null;
+		__this->___objectRenderer1_13 = (Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___objectRenderer1_13), (void*)(Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF*)NULL);
+		// objectRenderer2 = null;
+		__this->___objectRenderer2_14 = (Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___objectRenderer2_14), (void*)(Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF*)NULL);
+		// objectRenderer3 = null;
+		__this->___objectRenderer3_15 = (Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF*)NULL;
+		Il2CppCodeGenWriteBarrier((void**)(&__this->___objectRenderer3_15), (void*)(Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF*)NULL);
+		// isSelected = false;
+		((GesColorforRock_t204FC104575841CB105DAC87222AAB766CB98D7D_StaticFields*)il2cpp_codegen_static_fields_for(GesColorforRock_t204FC104575841CB105DAC87222AAB766CB98D7D_il2cpp_TypeInfo_var))->___isSelected_17 = (bool)0;
+		// objectToChangeLocation.transform.position = cursorVisual.transform.position;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___objectToChangeLocation_11;
+		NullCheck(L_0);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1;
+		L_1 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_0, NULL);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___cursorVisual_12;
+		NullCheck(L_2);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3;
+		L_3 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_2, NULL);
+		NullCheck(L_3);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
+		L_4 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_3, NULL);
+		NullCheck(L_1);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_1, L_4, NULL);
+		// if (isDelete){
+		bool L_5 = __this->___isDelete_5;
+		if (!L_5)
+		{
+			goto IL_004e;
+		}
+	}
+	{
+		// Destroy(objectToChangeLocation);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = __this->___objectToChangeLocation_11;
+		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
+		Object_Destroy_mFCDAE6333522488F60597AF019EA90BB1207A5AA(L_6, NULL);
+	}
+
+IL_004e:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Oculus.Interaction.Samples.GesColorforRock::ChangeColor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GesColorforRock_ChangeColor_m5F60EF92582661FB662BE8402F711C1001F86533 (GesColorforRock_t204FC104575841CB105DAC87222AAB766CB98D7D* __this, const RuntimeMethod* method) 
+{
+	{
+		// }
+		return;
+	}
+}
+// System.Void Oculus.Interaction.Samples.GesColorforRock::Update()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GesColorforRock_Update_m4C3B143AD5CBB91D605A0076078FDDF7E44ABA4F (GesColorforRock_t204FC104575841CB105DAC87222AAB766CB98D7D* __this, const RuntimeMethod* method) 
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GesColorforRock_U3CUpdateU3Eb__17_0_m94F7BECDDD27812725820F85F1AB28B08AB76B91_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GesColorforRock_U3CUpdateU3Eb__17_1_m42946814DC145E21684C27CF075397612C7378B6_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GesColorforRock_U3CUpdateU3Eb__17_2_mF22BD22FD99B3BAFB5CA6B476947E2EBA4AB9389_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GesColorforRock_U3CUpdateU3Eb__17_3_m8DF9A2014DCF7BBF4D3F0DC5C3E263AF44DA8677_RuntimeMethod_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GesColorforRock_t204FC104575841CB105DAC87222AAB766CB98D7D_il2cpp_TypeInfo_var);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2F30AC8AFBFF25FE763FE60C0B1D93F1EB7BF8D9);
+		s_Il2CppMethodInitialized = true;
+	}
+	float V_0 = 0.0f;
+	float V_1 = 0.0f;
+	{
+		// ChangeGesture.WhenSelected += () => {isChange = true;};
+		ActiveStateSelector_t4E5C386E75A1AEAB9729304B0BFC06441CD92A56* L_0 = __this->___ChangeGesture_6;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_1 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		NullCheck(L_1);
+		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_1, __this, (intptr_t)((void*)GesColorforRock_U3CUpdateU3Eb__17_0_m94F7BECDDD27812725820F85F1AB28B08AB76B91_RuntimeMethod_var), NULL);
+		NullCheck(L_0);
+		ActiveStateSelector_add_WhenSelected_m8573112236A5E1BE9210411A43006A785D5C744B(L_0, L_1, NULL);
+		// ChangeGesture.WhenUnselected += () => {isChange = false;};
+		ActiveStateSelector_t4E5C386E75A1AEAB9729304B0BFC06441CD92A56* L_2 = __this->___ChangeGesture_6;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_3 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		NullCheck(L_3);
+		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_3, __this, (intptr_t)((void*)GesColorforRock_U3CUpdateU3Eb__17_1_m42946814DC145E21684C27CF075397612C7378B6_RuntimeMethod_var), NULL);
+		NullCheck(L_2);
+		ActiveStateSelector_add_WhenUnselected_m17BB61289D6B73D6074E3DC4973C17CCF21E8D57(L_2, L_3, NULL);
+		// DeleteGesture.WhenSelected += () => {isDelete = true;};
+		ActiveStateSelector_t4E5C386E75A1AEAB9729304B0BFC06441CD92A56* L_4 = __this->___DeleteGesture_7;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_5 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		NullCheck(L_5);
+		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_5, __this, (intptr_t)((void*)GesColorforRock_U3CUpdateU3Eb__17_2_mF22BD22FD99B3BAFB5CA6B476947E2EBA4AB9389_RuntimeMethod_var), NULL);
+		NullCheck(L_4);
+		ActiveStateSelector_add_WhenSelected_m8573112236A5E1BE9210411A43006A785D5C744B(L_4, L_5, NULL);
+		// DeleteGesture.WhenUnselected += () => {isDelete = false;};
+		ActiveStateSelector_t4E5C386E75A1AEAB9729304B0BFC06441CD92A56* L_6 = __this->___DeleteGesture_7;
+		Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07* L_7 = (Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07*)il2cpp_codegen_object_new(Action_tD00B0A84D7945E50C2DFFC28EFEE6ED44ED2AD07_il2cpp_TypeInfo_var);
+		NullCheck(L_7);
+		Action__ctor_mBDC7B0B4A3F583B64C2896F01BDED360772F67DC(L_7, __this, (intptr_t)((void*)GesColorforRock_U3CUpdateU3Eb__17_3_m8DF9A2014DCF7BBF4D3F0DC5C3E263AF44DA8677_RuntimeMethod_var), NULL);
+		NullCheck(L_6);
+		ActiveStateSelector_add_WhenUnselected_m17BB61289D6B73D6074E3DC4973C17CCF21E8D57(L_6, L_7, NULL);
+		// float Sat = 0.7f;
+		V_0 = (0.699999988f);
+		// float Value = 0.7f;
+		V_1 = (0.699999988f);
+		// if (isChange && isSelected){
+		bool L_8 = __this->___isChange_4;
+		if (!L_8)
+		{
+			goto IL_011a;
+		}
+	}
+	{
+		bool L_9 = ((GesColorforRock_t204FC104575841CB105DAC87222AAB766CB98D7D_StaticFields*)il2cpp_codegen_static_fields_for(GesColorforRock_t204FC104575841CB105DAC87222AAB766CB98D7D_il2cpp_TypeInfo_var))->___isSelected_17;
+		if (!L_9)
+		{
+			goto IL_011a;
+		}
+	}
+	{
+		// objectRenderer1.material.SetColor("_TopColor",Color.HSVToRGB(Hue/360f, Sat, Value)) ;
+		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_10 = __this->___objectRenderer1_13;
+		NullCheck(L_10);
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_11;
+		L_11 = Renderer_get_material_m5BA2A00816C4CC66580D4B2E409CF10718C15656(L_10, NULL);
+		int32_t L_12 = __this->___Hue_16;
+		float L_13 = V_0;
+		float L_14 = V_1;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_15;
+		L_15 = Color_HSVToRGB_mD057CF0F1810C00D0F9E98A5CC5599213CF167DB_inline(((float)(((float)L_12)/(360.0f))), L_13, L_14, NULL);
+		NullCheck(L_11);
+		Material_SetColor_mFAB32FAA44461E46FD707B34184EC080CBB3539F(L_11, _stringLiteral2F30AC8AFBFF25FE763FE60C0B1D93F1EB7BF8D9, L_15, NULL);
+		// objectRenderer2.material.SetColor("_TopColor",Color.HSVToRGB(Hue/360f, Sat, Value)) ;
+		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_16 = __this->___objectRenderer2_14;
+		NullCheck(L_16);
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_17;
+		L_17 = Renderer_get_material_m5BA2A00816C4CC66580D4B2E409CF10718C15656(L_16, NULL);
+		int32_t L_18 = __this->___Hue_16;
+		float L_19 = V_0;
+		float L_20 = V_1;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_21;
+		L_21 = Color_HSVToRGB_mD057CF0F1810C00D0F9E98A5CC5599213CF167DB_inline(((float)(((float)L_18)/(360.0f))), L_19, L_20, NULL);
+		NullCheck(L_17);
+		Material_SetColor_mFAB32FAA44461E46FD707B34184EC080CBB3539F(L_17, _stringLiteral2F30AC8AFBFF25FE763FE60C0B1D93F1EB7BF8D9, L_21, NULL);
+		// objectRenderer3.material.SetColor("_TopColor",Color.HSVToRGB(Hue/360f, Sat, Value)) ;
+		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_22 = __this->___objectRenderer3_15;
+		NullCheck(L_22);
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_23;
+		L_23 = Renderer_get_material_m5BA2A00816C4CC66580D4B2E409CF10718C15656(L_22, NULL);
+		int32_t L_24 = __this->___Hue_16;
+		float L_25 = V_0;
+		float L_26 = V_1;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_27;
+		L_27 = Color_HSVToRGB_mD057CF0F1810C00D0F9E98A5CC5599213CF167DB_inline(((float)(((float)L_24)/(360.0f))), L_25, L_26, NULL);
+		NullCheck(L_23);
+		Material_SetColor_mFAB32FAA44461E46FD707B34184EC080CBB3539F(L_23, _stringLiteral2F30AC8AFBFF25FE763FE60C0B1D93F1EB7BF8D9, L_27, NULL);
+		// Hue = Hue + 5;
+		int32_t L_28 = __this->___Hue_16;
+		__this->___Hue_16 = ((int32_t)il2cpp_codegen_add(L_28, 5));
+		// if (Hue >= 360){
+		int32_t L_29 = __this->___Hue_16;
+		if ((((int32_t)L_29) < ((int32_t)((int32_t)360))))
+		{
+			goto IL_011a;
+		}
+	}
+	{
+		// Hue = 1;
+		__this->___Hue_16 = 1;
+	}
+
+IL_011a:
+	{
+		// }
+		return;
+	}
+}
+// System.Void Oculus.Interaction.Samples.GesColorforRock::.ctor()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GesColorforRock__ctor_mE9D2C1054E19181FFC79F8DF2E39717BEE7A3593 (GesColorforRock_t204FC104575841CB105DAC87222AAB766CB98D7D* __this, const RuntimeMethod* method) 
+{
+	{
+		// private int Hue = 1;
+		__this->___Hue_16 = 1;
+		MonoBehaviour__ctor_m592DB0105CA0BC97AA1C5F4AD27B12D68A3B7C1E(__this, NULL);
+		return;
+	}
+}
+// System.Void Oculus.Interaction.Samples.GesColorforRock::<Update>b__17_0()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GesColorforRock_U3CUpdateU3Eb__17_0_m94F7BECDDD27812725820F85F1AB28B08AB76B91 (GesColorforRock_t204FC104575841CB105DAC87222AAB766CB98D7D* __this, const RuntimeMethod* method) 
+{
+	{
+		// ChangeGesture.WhenSelected += () => {isChange = true;};
+		__this->___isChange_4 = (bool)1;
+		// ChangeGesture.WhenSelected += () => {isChange = true;};
+		return;
+	}
+}
+// System.Void Oculus.Interaction.Samples.GesColorforRock::<Update>b__17_1()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GesColorforRock_U3CUpdateU3Eb__17_1_m42946814DC145E21684C27CF075397612C7378B6 (GesColorforRock_t204FC104575841CB105DAC87222AAB766CB98D7D* __this, const RuntimeMethod* method) 
+{
+	{
+		// ChangeGesture.WhenUnselected += () => {isChange = false;};
+		__this->___isChange_4 = (bool)0;
+		// ChangeGesture.WhenUnselected += () => {isChange = false;};
+		return;
+	}
+}
+// System.Void Oculus.Interaction.Samples.GesColorforRock::<Update>b__17_2()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GesColorforRock_U3CUpdateU3Eb__17_2_mF22BD22FD99B3BAFB5CA6B476947E2EBA4AB9389 (GesColorforRock_t204FC104575841CB105DAC87222AAB766CB98D7D* __this, const RuntimeMethod* method) 
+{
+	{
+		// DeleteGesture.WhenSelected += () => {isDelete = true;};
+		__this->___isDelete_5 = (bool)1;
+		// DeleteGesture.WhenSelected += () => {isDelete = true;};
+		return;
+	}
+}
+// System.Void Oculus.Interaction.Samples.GesColorforRock::<Update>b__17_3()
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GesColorforRock_U3CUpdateU3Eb__17_3_m8DF9A2014DCF7BBF4D3F0DC5C3E263AF44DA8677 (GesColorforRock_t204FC104575841CB105DAC87222AAB766CB98D7D* __this, const RuntimeMethod* method) 
 {
 	{
 		// DeleteGesture.WhenUnselected += () => {isDelete = false;};
