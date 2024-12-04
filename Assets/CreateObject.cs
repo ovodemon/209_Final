@@ -12,6 +12,6 @@ public class CreateObject : MonoBehaviour
     public void copyobject()
     {
         GameObject newobject = Instantiate(currentobject);
-        newobject.transform.localPosition = new Vector3(0.0f, 0.0f, 0.2f);
+        newobject.transform.localPosition = new Vector3(0.0f, 0.0f, 1.0f);
     }
 }

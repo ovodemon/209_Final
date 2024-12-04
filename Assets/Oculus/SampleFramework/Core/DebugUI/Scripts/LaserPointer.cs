@@ -25,6 +25,7 @@ public class LaserPointer : OVRCursor
     }
 
     public GameObject cursorVisual;
+    // public GameObject cursorVisual2;
     public float maxLength = 10.0f;
 
     private LaserBeamBehavior _laserBeamBehavior;
@@ -63,6 +64,7 @@ public class LaserPointer : OVRCursor
     private void Start()
     {
         if (cursorVisual) cursorVisual.SetActive(false);
+        // if (cursorVisual2) cursorVisual2.SetActive(false);
         OVRManager.InputFocusAcquired += OnInputFocusAcquired;
         OVRManager.InputFocusLost += OnInputFocusLost;
     }
@@ -93,12 +95,18 @@ public class LaserPointer : OVRCursor
                 cursorVisual.transform.position = _endPoint;
                 cursorVisual.SetActive(true);
             }
+            // if (cursorVisual2)
+            // {
+            //    cursorVisual2.transform.position = _endPoint;
+            //     cursorVisual2.SetActive(true);
+            // }            
         }
         else
         {
             UpdateLaserBeam(_startPoint, _startPoint + maxLength * _forward);
             lineRenderer.SetPosition(1, _startPoint + maxLength * _forward);
             if (cursorVisual) cursorVisual.SetActive(false);
+            // if (cursorVisual2) cursorVisual2.SetActive(false);
         }
     }
 
@@ -138,6 +146,7 @@ public class LaserPointer : OVRCursor
     void OnDisable()
     {
         if (cursorVisual) cursorVisual.SetActive(false);
+        // if (cursorVisual2) cursorVisual2.SetActive(false);
     }
     public void OnInputFocusLost()
     {

@@ -16,20 +16,21 @@ namespace Oculus.Interaction.Samples
         [SerializeField] private ActiveStateSelector thumbup;
         //[SerializeField] private ActiveStateSelector thumbdown;
         // Reference to the cube GameObject that will scale up or down based on the gestures
-        [SerializeField] private GameObject cube1;
-        [SerializeField] private GameObject cube2;
-        [SerializeField] private GameObject cube3;
+        [SerializeField] private GameObject cube;
         // Define the increment in scale for the cube when gestures are detected
-        //private Vector3 scale_inc = new Vector3(0.01f,0.01f,0.01f);
-
+        private Vector3 scale_inc = new Vector3(0.01f,0.01f,0.01f);
+        private Renderer objectRenderer;
         // Start is called before the first frame update
         // This method initializes the gesture detection by subscribing to the selection and unselection events of thumb gestures
-        
+        private int Hue = 1;
+
         void Start() // if you wanna further simply the code, you may call Sizeup() and Sizedown() here.
         {
             // Subscribe to thumb-up gesture events to update isThumbup when selected/unselected            
             thumbup.WhenSelected += () => {isThumbup = true;};
             thumbup.WhenUnselected += () => {isThumbup = false;};
+            objectRenderer = cube.GetComponent<Renderer>();
+
             // Subscribe to thumb-down gesture events to update isThumbdown when selected/unselected
             //thumbdown.WhenSelected += () => {isThumbdown = true;};
             //thumbdown.WhenUnselected += () => {isThumbdown = false;};
@@ -39,10 +40,14 @@ namespace Oculus.Interaction.Samples
         // This method checks the state of gestures and calls appropriate scaling methods
         void Update()
         {
+            float Sat = 0.7f;
+            float Value = 0.7f;
             if(isThumbup){
-                cube1.transform.position = new Vector3(0.0f, 0.0f, 0.4f);
-                cube2.transform.position = new Vector3(0.0f, 0.3f, 0.4f);
-                cube3.transform.position = new Vector3(0.0f, -0.3f, 0.4f);
+                objectRenderer.material.color = Color.HSVToRGB(Hue/360f, Sat, Value);
+                Hue = Hue + 10;
+                if (Hue >= 360){
+                    Hue = 1;
+                }
             }
             //if(isThumbup) Sizeup();
             //if(isThumbdown) Sizedown();
