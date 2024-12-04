@@ -31,10 +31,12 @@ namespace Oculus.Interaction.Samples
         {
             objectRenderer = null;
             isSelected = false;
-            objectToChangeLocation.transform.position = cursorVisual.transform.position;
+            
             if (isDelete){
                 //objectToChangeLocation.transform.position = new Vector3 (-500,-500,-500);
                 Destroy(objectToChangeLocation);
+            }else {
+                objectToChangeLocation.transform.position = cursorVisual.transform.position;
             }
 
         }
