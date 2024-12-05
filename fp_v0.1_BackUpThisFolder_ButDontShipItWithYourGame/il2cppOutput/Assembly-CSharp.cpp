@@ -6598,6 +6598,8 @@ IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR float Mathf_Lerp_mFB4910B358B986A
 IL2CPP_MANAGED_FORCE_INLINE IL2CPP_METHOD_ATTR void Color__ctor_mCD6889CDE39F18704CD6EA8E2EFBFA48BA3E13B0_inline (Color_tD001788D726C3A7F1379BEED0260B9591F440C1F* __this, float ___r0, float ___g1, float ___b2, const RuntimeMethod* method) ;
 // System.Void UnityEngine.Light::set_color(UnityEngine.Color)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Light_set_color_m242F09E22904E0A20D5B032A0749678B0796A87C (Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* __this, Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___value0, const RuntimeMethod* method) ;
+// System.Void UnityEngine.Light::set_intensity(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Light_set_intensity_mE4820C7F39F490B92ED5EA0C3AADA7C0775BE854 (Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* __this, float ___value0, const RuntimeMethod* method) ;
 // System.Boolean OVRInput::Get(OVRInput/Button,OVRInput/Controller)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR bool OVRInput_Get_m32EEE63D73D2D4B6F5E98495B8E1F2FA8583CB41 (int32_t ___virtualMask0, int32_t ___controllerMask1, const RuntimeMethod* method) ;
 // System.Boolean OVRInput::Get(OVRInput/Touch,OVRInput/Controller)
@@ -9166,7 +9168,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightColorChange_Update_m02DC5EE5E02CD33
 		float L_1 = __this->___timeLimit_5;
 		if ((!(((float)L_0) < ((float)L_1))))
 		{
-			goto IL_0077;
+			goto IL_00a1;
 		}
 	}
 	{
@@ -9198,9 +9200,17 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void LightColorChange_Update_m02DC5EE5E02CD33
 		Color__ctor_mCD6889CDE39F18704CD6EA8E2EFBFA48BA3E13B0_inline((&L_15), L_12, L_13, L_14, /*hidden argument*/NULL);
 		NullCheck(L_10);
 		Light_set_color_m242F09E22904E0A20D5B032A0749678B0796A87C(L_10, L_15, NULL);
+		// lightSource.intensity = Mathf.Lerp(1f, 0f, timer / timeLimit);
+		Light_t1E68479B7782AF2050FAA02A5DC612FD034F18F3* L_16 = __this->___lightSource_4;
+		float L_17 = __this->___timer_6;
+		float L_18 = __this->___timeLimit_5;
+		float L_19;
+		L_19 = Mathf_Lerp_mFB4910B358B986AFB22114ED90458E8341867479_inline((1.0f), (0.0f), ((float)(L_17/L_18)), NULL);
+		NullCheck(L_16);
+		Light_set_intensity_mE4820C7F39F490B92ED5EA0C3AADA7C0775BE854(L_16, L_19, NULL);
 	}
 
-IL_0077:
+IL_00a1:
 	{
 		// }
 		return;

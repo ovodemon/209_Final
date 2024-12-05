@@ -23263,37 +23263,36 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GesColor_unSelected_m54D0CE3D5614FCB5F5D
 		Il2CppCodeGenWriteBarrier((void**)(&__this->___objectRenderer_11), (void*)(Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF*)NULL);
 		// isSelected = false;
 		((GesColor_t69D0962D4017ACBAD7855C58E33495A1C13F5D9D_StaticFields*)il2cpp_codegen_static_fields_for(GesColor_t69D0962D4017ACBAD7855C58E33495A1C13F5D9D_il2cpp_TypeInfo_var))->___isSelected_13 = (bool)0;
+		// objectToChangeLocation.transform.position = cursorVisual.transform.position;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_0 = __this->___objectToChangeLocation_9;
+		NullCheck(L_0);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_1;
+		L_1 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_0, NULL);
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___cursorVisual_10;
+		NullCheck(L_2);
+		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3;
+		L_3 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_2, NULL);
+		NullCheck(L_3);
+		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_4;
+		L_4 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_3, NULL);
+		NullCheck(L_1);
+		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_1, L_4, NULL);
 		// if (isDelete){
-		bool L_0 = __this->___isDelete_5;
-		if (!L_0)
+		bool L_5 = __this->___isDelete_5;
+		if (!L_5)
 		{
-			goto IL_0021;
+			goto IL_0040;
 		}
 	}
 	{
 		// Destroy(objectToChangeLocation);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_1 = __this->___objectToChangeLocation_9;
+		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_6 = __this->___objectToChangeLocation_9;
 		il2cpp_codegen_runtime_class_init_inline(Object_tC12DECB6760A7F2CBF65D9DCF18D044C2D97152C_il2cpp_TypeInfo_var);
-		Object_Destroy_mFCDAE6333522488F60597AF019EA90BB1207A5AA(L_1, NULL);
-		return;
+		Object_Destroy_mFCDAE6333522488F60597AF019EA90BB1207A5AA(L_6, NULL);
 	}
 
-IL_0021:
+IL_0040:
 	{
-		// objectToChangeLocation.transform.position = cursorVisual.transform.position;
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_2 = __this->___objectToChangeLocation_9;
-		NullCheck(L_2);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_3;
-		L_3 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_2, NULL);
-		GameObject_t76FEDD663AB33C991A9C9A23129337651094216F* L_4 = __this->___cursorVisual_10;
-		NullCheck(L_4);
-		Transform_tB27202C6F4E36D225EE28A13E4D662BF99785DB1* L_5;
-		L_5 = GameObject_get_transform_m0BC10ADFA1632166AE5544BDF9038A2650C2AE56(L_4, NULL);
-		NullCheck(L_5);
-		Vector3_t24C512C7B96BBABAD472002D0BA2BDA40A5A80B2 L_6;
-		L_6 = Transform_get_position_m69CD5FA214FDAE7BB701552943674846C220FDE1(L_5, NULL);
-		NullCheck(L_3);
-		Transform_set_position_mA1A817124BB41B685043DED2A9BA48CDF37C4156(L_3, L_6, NULL);
 		// }
 		return;
 	}
@@ -23319,6 +23318,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GesColor_Update_m3FF7E188CFFB3975FC4425D
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GesColor_U3CUpdateU3Eb__13_3_mEDFC2AD8EF0AA27893492B680774878F058AD02E_RuntimeMethod_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&GesColor_t69D0962D4017ACBAD7855C58E33495A1C13F5D9D_il2cpp_TypeInfo_var);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral2F30AC8AFBFF25FE763FE60C0B1D93F1EB7BF8D9);
+		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteral47A3FAF17D89549FD0F0ECA7370B81F7C80DFCDE);
 		il2cpp_codegen_initialize_runtime_metadata((uintptr_t*)&_stringLiteralAC0932BA6428825C433518C5A63A96E8C84DCDE3);
 		s_Il2CppMethodInitialized = true;
 	}
@@ -23361,14 +23361,14 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GesColor_Update_m3FF7E188CFFB3975FC4425D
 		bool L_8 = __this->___isChange_4;
 		if (!L_8)
 		{
-			goto IL_00eb;
+			goto IL_011a;
 		}
 	}
 	{
 		bool L_9 = ((GesColor_t69D0962D4017ACBAD7855C58E33495A1C13F5D9D_StaticFields*)il2cpp_codegen_static_fields_for(GesColor_t69D0962D4017ACBAD7855C58E33495A1C13F5D9D_il2cpp_TypeInfo_var))->___isSelected_13;
 		if (!L_9)
 		{
-			goto IL_00eb;
+			goto IL_011a;
 		}
 	}
 	{
@@ -23396,14 +23396,26 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GesColor_Update_m3FF7E188CFFB3975FC4425D
 		L_21 = Color_HSVToRGB_mD057CF0F1810C00D0F9E98A5CC5599213CF167DB_inline(((float)(((float)L_18)/(360.0f))), L_19, L_20, NULL);
 		NullCheck(L_17);
 		Material_SetColor_mFAB32FAA44461E46FD707B34184EC080CBB3539F(L_17, _stringLiteralAC0932BA6428825C433518C5A63A96E8C84DCDE3, L_21, NULL);
+		// objectRenderer.material.SetColor("_Color",Color.HSVToRGB(Hue/360f, Sat, Value)) ;
+		Renderer_t320575F223BCB177A982E5DDB5DB19FAA89E7FBF* L_22 = __this->___objectRenderer_11;
+		NullCheck(L_22);
+		Material_t18053F08F347D0DCA5E1140EC7EC4533DD8A14E3* L_23;
+		L_23 = Renderer_get_material_m5BA2A00816C4CC66580D4B2E409CF10718C15656(L_22, NULL);
+		int32_t L_24 = __this->___Hue_12;
+		float L_25 = V_0;
+		float L_26 = V_1;
+		Color_tD001788D726C3A7F1379BEED0260B9591F440C1F L_27;
+		L_27 = Color_HSVToRGB_mD057CF0F1810C00D0F9E98A5CC5599213CF167DB_inline(((float)(((float)L_24)/(360.0f))), L_25, L_26, NULL);
+		NullCheck(L_23);
+		Material_SetColor_mFAB32FAA44461E46FD707B34184EC080CBB3539F(L_23, _stringLiteral47A3FAF17D89549FD0F0ECA7370B81F7C80DFCDE, L_27, NULL);
 		// Hue = Hue + 5;
-		int32_t L_22 = __this->___Hue_12;
-		__this->___Hue_12 = ((int32_t)il2cpp_codegen_add(L_22, 5));
+		int32_t L_28 = __this->___Hue_12;
+		__this->___Hue_12 = ((int32_t)il2cpp_codegen_add(L_28, 5));
 		// if (Hue >= 360){
-		int32_t L_23 = __this->___Hue_12;
-		if ((((int32_t)L_23) < ((int32_t)((int32_t)360))))
+		int32_t L_29 = __this->___Hue_12;
+		if ((((int32_t)L_29) < ((int32_t)((int32_t)360))))
 		{
-			goto IL_00eb;
+			goto IL_011a;
 		}
 	}
 	{
@@ -23411,7 +23423,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void GesColor_Update_m3FF7E188CFFB3975FC4425D
 		__this->___Hue_12 = 1;
 	}
 
-IL_00eb:
+IL_011a:
 	{
 		// }
 		return;

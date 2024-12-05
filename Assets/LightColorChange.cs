@@ -18,6 +18,7 @@ public class LightColorChange : MonoBehaviour
 
     //READ IN THE INITIAL LIGHT COLOR OF THE LIGHT SOURCE TO MODIFY
     private Color initialLight;
+    
 
     void Start()
     {
@@ -43,6 +44,7 @@ public class LightColorChange : MonoBehaviour
 
            //OUTPUT THE NEW DIRECTIONAL LIGHT COLOR WITH modified green and blue values
             lightSource.color = new Color(initialLight.r, greenValue, blueValue);
+            lightSource.intensity = Mathf.Lerp(1f, 0f, timer / timeLimit);
         }
 
     }
